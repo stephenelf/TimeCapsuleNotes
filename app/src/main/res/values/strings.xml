@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TimeCapsuleNotes</string>
+    <string name="no_notes_image_content_description">no notes found</string>
+    <string name="label_no_notes">no notes</string>
+    <string name="add_note">Add Time Capsule Note</string>
+    <string name="menu_back">Back</string>
+    <string name="title_hint">Title</string>
+    <string name="content_hint">Content</string>
+    <string name="cd_save_note">Save note</string>
+    <string name="successfully_saved_note_message">Note saved!</string>
+    <string name="successfully_added_note_message">Note Added!</string>
+    <string name="successfully_deleted_note_message">Note deleted!</string>
+    <string name="edit_task">Edit</string>
+    <string name="note_details">Time capsule note details</string>
+    <string name="menu_delete_task">delete note</string>
+    <string name="do_not_open_until">Do not open until:</string>
+    <string name="pokemon_habitat">Pokemon habitat</string>
+</resources>
