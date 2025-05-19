@@ -88,7 +88,7 @@ fun AddEditNoteScreen(
         AddEditNoteContent(
             loading = uiState.isLoading,
             title = uiState.title,
-            content = uiState.content,
+            description = uiState.content,
             onTitleChanged = viewModel::updateTitle,
             onContentChanged = viewModel::updateContent,
             onHabitatChanged = viewModel::updateHabitat,
@@ -122,7 +122,7 @@ fun AddEditNoteScreen(
 private fun AddEditNoteContent(
     loading: Boolean,
     title: String,
-    content: String,
+    description: String,
     onTitleChanged: (String) -> Unit,
     onContentChanged: (String) -> Unit,
     onHabitatChanged: (String) -> Unit,
@@ -173,7 +173,7 @@ private fun AddEditNoteContent(
                 colors = textFieldColors
             )
             OutlinedTextField(
-                value = content,
+                value = description,
                 onValueChange = onContentChanged,
                 placeholder = { Text(stringResource(id = R.string.content_hint)) },
                 modifier = Modifier
@@ -181,7 +181,7 @@ private fun AddEditNoteContent(
                     .fillMaxWidth(),
                 colors = textFieldColors
             )
-            HabitatsDropdownMenu(onHabitatChanged, habitats)
+         //   HabitatsDropdownMenu(onHabitatChanged, habitats)
             OutlinedTextField(
                 value = selectedDate,
                 onValueChange = { },
@@ -295,7 +295,7 @@ fun PreviewNoteCard() {
             AddEditNoteContent(
                 loading = false,
                 title = "Test Title",
-                content = "Test Content",
+                description = "Test Content",
                 onTitleChanged = {},
                 onHabitatChanged = {},
                 onDateChanged = {},
